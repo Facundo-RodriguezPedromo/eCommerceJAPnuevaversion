@@ -11,11 +11,22 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
 }
-
-main {
+body main {
   flex: 1;
+  background-color: rgba(230, 237, 243, 0.3960784314);
+  margin: 50px;
+  filter: drop-shadow(5px 2px 1px #072C50);
+}
+body footer {
+  background-color: rgba(7, 44, 80, 0.3294117647);
+  color: rgba(230, 237, 243, 0.8705882353);
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 4px 2px rgb(184, 135, 70);
+  position: relative;
 }
 
+/*Barra de busqueda*/
 .search-bar-container {
   text-align: center;
   padding: 2px;
@@ -58,29 +69,10 @@ h1 {
   filter: drop-shadow(5px 2px 1px rgba(239, 243, 8, 0.295));
 }
 
-main {
-  background-color: rgba(230, 237, 243, 0.3960784314);
-  margin: 50px;
-  filter: drop-shadow(5px 2px 1px #072C50);
-}
-
-main img {
-  filter: drop-shadow(5px 2px 1px #072C50);
-}
-
 h2 {
   color: rgba(230, 237, 243, 0.8705882353);
   font-size: 28px;
   filter: drop-shadow(2px 2px 1px #072C50);
-}
-
-footer {
-  background-color: rgba(7, 44, 80, 0.3294117647);
-  color: rgba(230, 237, 243, 0.8705882353);
-  text-align: center;
-  padding: 10px;
-  box-shadow: 2px 2px 4px 2px rgb(184, 135, 70);
-  position: relative;
 }
 
 /*# sourceMappingURL=inicio.css.map */

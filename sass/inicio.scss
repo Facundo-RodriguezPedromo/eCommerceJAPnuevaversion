@@ -1,5 +1,4 @@
 @import '../sass/variables/variables';
-
 body {
     font-family: 'Kdam Thmor Pro', sans-serif;
     margin: 0;
@@ -7,16 +6,26 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
     background-image: url('/img/fondoLogin.png');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    main {
+        flex: 1;
+        background-color: $blancoTransparente;
+        margin: 50px;
+        filter: drop-shadow(5px 2px 1px $azulScuro);
+    }
+    footer {
+        background-color: $azulTransparente;
+        color: $blancoZulado;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 2px 2px 4px 2px $dorado;
+        position: relative;
+    }
 }
-main {
-    flex: 1;
-}
-
+/*Barra de busqueda*/
 .search-bar-container {
     text-align: center;
     padding: 2px;
@@ -27,7 +36,6 @@ main {
         text-align: center;
     }
 }
-
 .navbar {
     text-align: center;
     padding-left: 20vh;
@@ -64,15 +72,6 @@ h1 {
     filter: drop-shadow(5px 2px 1px $doradoClaro);
 }
 
-main {
-    background-color: $blancoTransparente;
-    margin: 50px;
-    filter: drop-shadow(5px 2px 1px $azulScuro);
-}
-
-main img {
-    filter: drop-shadow(5px 2px 1px $azulScuro);
-}
 
 h2 {
     color: $blancoZulado;
@@ -80,11 +79,3 @@ h2 {
     filter: drop-shadow(2px 2px 1px $azulScuro);
 }
 
-footer {
-    background-color: $azulTransparente;
-    color: $blancoZulado;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 2px 2px 4px 2px $dorado;
-    position: relative;
-}
