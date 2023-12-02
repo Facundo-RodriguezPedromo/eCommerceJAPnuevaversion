@@ -1,0 +1,19 @@
+$azulTransparente: #072c5054;
+$azulScuro: #072C50;
+$dorado: rgb(184, 135, 70);
+$doradoClaro: rgba(239, 243, 8, 0.295);
+$grisaseo: #5c5c5fed;
+$blancoZulado: #e6edf3de;
+$blancoScuro: #bec4cade;
+$blancoTransparente: #e6edf365;
+
+@mixin aNav {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: $blancoZulado;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 3px;
+    filter: drop-shadow(5px 2px 1px $azulScuro);
+}

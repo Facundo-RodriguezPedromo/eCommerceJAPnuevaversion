@@ -1,0 +1,82 @@
+@import '../sass/variables/variables';
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/fondoLogin.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.search-bar-container {
+    text-align: center;
+    padding: 2px;
+    padding-left: 60vh;
+    padding-right: 60vh;
+    background-color: $azulTransparente;
+    .form-control::placeholder {
+        text-align: center;
+    }
+}
+
+.navbar {
+    text-align: center;
+    padding-left: 20vh;
+    padding-right: 50vh;
+    img {
+        width: 5vh;
+    }
+    
+}
+
+.carousel-item img {
+    max-height: 300px; /* Altura máxima de las imágenes */
+    margin: 0 auto; /* Centrar la imagen dentro de su contenedor */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Color del texto */
+}
+
+
+
+
+
+/*main*/
+h1 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: $blancoZulado;
+    font-size: 48px;
+    filter: drop-shadow(5px 2px 1px $doradoClaro);
+}
+
+main {
+    background-color: $blancoTransparente;
+    margin: 50px;
+    filter: drop-shadow(5px 2px 1px $azulScuro);
+}
+
+main img {
+    filter: drop-shadow(5px 2px 1px $azulScuro);
+}
+
+h2 {
+    color: $blancoZulado;
+    font-size: 28px;
+    filter: drop-shadow(2px 2px 1px $azulScuro);
+}
+
+footer {
+    background-color: $azulTransparente;
+    color: $blancoZulado;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 2px 2px 4px 2px $dorado;
+}

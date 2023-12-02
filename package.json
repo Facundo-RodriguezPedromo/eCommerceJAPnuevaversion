@@ -1,0 +1,11 @@
+{
+  "name": "ecommercejap-nuevaversion",
+  "version": "1.0.0",
+  "description": "Entrega 1 - Pautas Individuales\r Modelar las entidades y sus propiedades, detectadas a partir de la lectura del obligatorio. Para el modelado, puedes hacer uso de herramientas cómo draw.io, o cualquier otra herramienta que prefieras, incluso puedes hacerlo en una hoja de cálculos.\r Realizar una petición web a una URL donde se encuentra una colección de productos en formato JSON, con la información básica (precio, nombre, breve descripción) respectiva a cada producto, y mostrar el listado en HTML.\r Realizar una pantalla de autenticación, de forma tal que la misma sea el inicio del sitio (en vez de la portada donde se muestra el listado de categorías). Aquí podrás encontrar algún ejemplo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
