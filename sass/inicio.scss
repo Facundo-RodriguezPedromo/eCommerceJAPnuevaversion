@@ -15,6 +15,7 @@ body {
         background-color: $blancoTransparente;
         margin: 50px;
         filter: drop-shadow(5px 2px 1px $azulScuro);
+        margin-top: 0;
     }
     footer {
         background-color: $azulTransparente;
@@ -23,9 +24,12 @@ body {
         padding: 10px;
         box-shadow: 2px 2px 4px 2px $dorado;
         position: relative;
+        .container p {
+            color: rgb(255, 0, 128);
+        }
     }
 }
-/*Barra de busqueda*/
+/* Input de busqueda */
 .search-bar-container {
     text-align: center;
     padding: 2px;
@@ -36,19 +40,26 @@ body {
         text-align: center;
     }
 }
+/* Barra de navegacion */
 .navbar {
     text-align: center;
     padding-left: 20vh;
     padding-right: 50vh;
+    margin-bottom: 0;
     img {
         width: 5vh;
     }
     
 }
-
+/* Galeria de index */
+.container .mt-5 {
+    margin-top: 0;
+}
 .carousel-item img {
-    max-height: 300px; /* Altura máxima de las imágenes */
+    height: 100vh; 
+    width: 100vh;
     margin: 0 auto; /* Centrar la imagen dentro de su contenedor */
+    margin-top: 0;
 }
 
 .carousel-caption {
@@ -60,10 +71,6 @@ body {
     color: #fff; /* Color del texto */
 }
 
-
-
-
-
 /*main*/
 h1 {
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -71,7 +78,6 @@ h1 {
     font-size: 48px;
     filter: drop-shadow(5px 2px 1px $doradoClaro);
 }
-
 
 h2 {
     color: $blancoZulado;

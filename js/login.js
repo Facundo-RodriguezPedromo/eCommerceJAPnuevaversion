@@ -1,4 +1,4 @@
-//* Validacion De Usuario e-commerce *//
+//* Validacion De Usuario *//
 document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("Entrar").addEventListener("click", function (evento) {
@@ -45,6 +45,11 @@ function showTab(tabName) {
 
     document.getElementById(tabName + '-tab').classList.add('active');
 }
+
+
+
+
+
 
 
 
