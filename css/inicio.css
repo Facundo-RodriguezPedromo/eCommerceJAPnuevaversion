@@ -26,7 +26,7 @@ body footer {
   position: relative;
 }
 body footer .container p {
-  color: blue;
+  color: rgb(184, 135, 70);
 }
 
 /* Input de busqueda */

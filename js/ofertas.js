@@ -22,8 +22,7 @@ let totalElement = document.querySelector('.cart-total-title');
                     <span class="shop-item-price">$${product.price}</span>
                     <button class="btn btn-primary shop-item-button" type="button">Agregar al carrito</button>
                 </div>
-            </div>
-            `
+            </div> `
         });
 
     //* Click en un boton de agregar al carrito *//
@@ -58,12 +57,8 @@ let totalElement = document.querySelector('.cart-total-title');
             //* Dibujar en el dom compras actualizadas *//
             drawItems()
             
-            
-
             //* Actualizar el valor total *//
             getTotal()
-
-            
         });
     });
 
