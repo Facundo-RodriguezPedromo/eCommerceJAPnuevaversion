@@ -103,6 +103,17 @@ body footer .container p {
 .navbar img {
   width: 5vh;
 }
+.navbar .cantidad-carrito {
+  background-color: rgba(7, 44, 80, 0.3294117647);
+  color: rgba(230, 237, 243, 0.8705882353);
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
 
 /* Galeria de index */
 .container .mt-5 {

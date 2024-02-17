@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+
     main {
         flex: 1;
         background-color: $blancoTransparente;
@@ -111,6 +112,18 @@ body {
     margin-bottom: 0;
     img {
         width: 5vh;
+    }
+
+    .cantidad-carrito {
+        background-color: $azulTransparente;
+        color: $blancoZulado;
+        border-radius: 50%;
+        font-size: 12px;
+        padding: 4px;
+        top: 37px;
+        right: 14px;
+        position: absolute;
+        display: none;
     }
     
 }
