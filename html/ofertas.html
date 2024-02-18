@@ -22,7 +22,12 @@
 
 <body>
     <div class="search-bar-container">
-        <input type="text" placeholder="Buscar producto" class="form-control">
+        <form class="buscador">
+            <input type="search" placeholder="Escribir aqui lo que tu buscar" class="form-control" id="buscador">
+            <button type="submit">Buscar</button>
+        </form>
+        <h2>resultados</h2>
+        <div id="resultadoBusqueda"></div>
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -93,11 +98,13 @@
     <main>
         <h1>Ofertas del Mes !</h1>
 
-        <div id="shop-content"  class="shop-items">
+        <div id="offerProduct"  class="offer-product">
             <!--Aqui presento los articulos de ofertas-->
         </div>
         
-        <div id="modal-container" class="modal-container"></div>
+        <div id="modalContainer" class="modal-container">
+            <!--Aqui presento los articulos que compra el usuario-->
+        </div>
     </main>
 
     <footer class="text-muted">
@@ -119,11 +126,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!--script para agregar al carrito-->
-    <script src="../js/productosOfertas.js"></script>
-    <script src="../js/carritoOfertas.js"></script>
-    <script src="../js/carritoFunciones.js"></script>
-    
-   
+    <script src="../js/ofertas.js"></script>
+    <script src="../js/buscador.js"></script>
 </body>
 
 </html>

@@ -282,3 +282,8 @@ COMPILA
 
 Ctrl  + C 
 STOP
+
+
+
+IDEAS ////////// 
+Puede ser un ecommerce para que las personas publiques sus ropas usadas, dejar direccion para retirar o coordinar con comprador
