@@ -17,7 +17,10 @@ body {
         margin: 50px;
         filter: drop-shadow(5px 2px 1px $azulScuro);
         margin-top: 0;
-
+/*filtro clase para desaparecer articulos de barra buscadora*/
+        .filtro {
+            display: none;
+        }
         .modal-container {
             width: 80%;
             margin: 0 10%;
