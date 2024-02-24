@@ -12,7 +12,7 @@ body {
 }
 body main {
   flex: 1;
-  background-color: rgba(230, 237, 243, 0.3960784314);
+  background-color: rgba(7, 44, 80, 0.3294117647);
   margin: 50px;
   filter: drop-shadow(5px 2px 1px #072C50);
   margin-top: 0;
@@ -22,11 +22,13 @@ body main .filtro {
   display: none;
 }
 body main .modal-container {
+  border-radius: 1%;
   width: 80%;
   margin: 0 10%;
   max-height: 88vh;
-  color: white;
+  color: rgba(230, 237, 243, 0.8705882353);
   background-color: #072C50;
+  box-shadow: 2px 2px 4px 2px rgb(184, 135, 70);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,23 +38,7 @@ body main .modal-container {
   top: 12vh;
   scrollbar-color: none;
 }
-body main .modal-container::-webkit-scrollbar {
-  display: none;
-}
-body main .modal-header {
-  display: flex;
-  justify-content: space-around;
-  background-color: black;
-  color: white;
-  width: 100%;
-}
-body main .modal-header-title {
-  justify-self: start;
-}
-body main .modal-header-button {
-  cursor: pointer;
-}
-body main .modal-container > .modal-content {
+body main .modal-container .modal-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -60,9 +46,30 @@ body main .modal-container > .modal-content {
   width: 70%;
   margin: 10px;
 }
-body main .modal-container > div > img {
-  height: 120px;
-  width: 120px;
+body main .modal-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  border-style: groove;
+  border-color: rgba(7, 44, 80, 0.3294117647);
+  box-shadow: 2px 2px 4px 2px rgb(184, 135, 70);
+}
+body main .modal-container::-webkit-scrollbar {
+  display: none;
+}
+body main .modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(190, 196, 202, 0.8705882353);
+  width: 100%;
+}
+body main .modal-header-title {
+  justify-self: start;
+  color: #072C50;
+}
+body main .modal-header-button {
+  cursor: pointer;
+  color: #072C50;
 }
 body main .total-content {
   font-size: 25px;
@@ -72,6 +79,10 @@ body main .total-content {
 }
 body main .delete-product {
   cursor: pointer;
+  border-radius: 2%;
+  border-style: groove;
+  border-color: rgba(7, 44, 80, 0.3294117647);
+  box-shadow: 2px 2px 4px 2px rgb(184, 135, 70);
 }
 body footer {
   background-color: rgba(7, 44, 80, 0.3294117647);

@@ -23,11 +23,13 @@
     let body=''
         for(let i = 0; i < productosConCantidad.length; i++){
             body += `
-            <div class="offer-product" id="${productosConCantidad[i].id}">
-                <span class="offer-product-title">${productosConCantidad[i].title}</span>
-                <img class="offer-product-image" src="${productosConCantidad[i].image}" style="width: 100px; height: 100px;">
-                <span class="offer-product-price">$${productosConCantidad[i].price}</span>
-                <button class="offer-product-button" id="btnComprar${productosConCantidad[i].id}">Comprar</button>
+            <div class="card offer-product" id="${productosConCantidad[i].id}">
+                <img class="card-img-top offer-product-image" src="${productosConCantidad[i].image}" style="width: 100px; height: 100px;" alt="Imagen del producto">
+                <div class="card-body">
+                    <h5 class="card-title offer-product-title">${productosConCantidad[i].title}</h5>
+                    <p class="card-text offer-product-price">$${productosConCantidad[i].price}</p>
+                    <button class="btn btn-primary offer-product-button" id="btnComprar${productosConCantidad[i].id}">Comprar</button>
+                </div>
             </div>
             `}
             offerProduct.innerHTML = body
@@ -101,12 +103,19 @@ const pintarCarrito = () => {
         carrito.forEach((product, index) => {
             let carritoContent = document.createElement("div");
             carritoContent.className = "modal-content";
+            
             carritoContent.innerHTML = `
-                <img src="${product.image}" style="width: 100px; height: 100px;">
-                <h3>${product.title}</h3>
-                <p>$ ${product.price}</p>
-                <p>Cantidad: ${product.cantidad}</p>
-                <p>Total: ${product.cantidad * product.price}</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="${product.image}" class="img-fluid" alt="${product.title}">
+                </div>
+                <div class="col-md-9">
+                    <h3>${product.title}</h3>
+                    <p>Precio: $ ${product.price}</p>
+                    <p>Cantidad: ${product.cantidad}</p>
+                    <p>Total: $ ${product.cantidad * product.price}</p>
+                </div>
+            </div>
             `;
     
             modalContainer.append(carritoContent);
