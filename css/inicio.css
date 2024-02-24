@@ -18,7 +18,7 @@ body main {
   margin-top: 0;
   /*filtro clase para desaparecer articulos de barra buscadora*/
 }
-body main .filtro {
+body main .ocultar {
   display: none;
 }
 body main .modal-container {
