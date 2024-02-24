@@ -22,7 +22,12 @@
 
 <body>
     <div class="search-bar-container">
-        <input type="text" placeholder="Buscar producto" class="form-control">
+        <form class="buscador">
+            <input type="search" placeholder="Buscar . . ." class="form-control" id="buscador">
+            <button type="submit">Buscar</button>
+        </form>
+        <h2>resultados</h2>
+        <div id="resultadoBusqueda"></div>
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -79,8 +84,9 @@
                 </ul>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../carrito.html"><img src="../../img/carritoIcon.png"
-                                alt=""></a>
+                        <h2 id="carrito"><img src="../../img/carritoIcon.png" alt="">
+                            <span id="cantidadCarrito" class="cantidad-carrito"></span>
+                        </h2>
                     </li>
                 </ul>
             </div>
