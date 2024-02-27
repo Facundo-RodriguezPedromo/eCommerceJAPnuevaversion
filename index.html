@@ -25,68 +25,6 @@
 </head>
 
 <body>
-    <!--<div class="search-bar-container">
-        <input type="text" placeholder="Buscar producto" class="form-control">
-    </div>
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Categorías
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="html/categorias/tecnologia.html">Tecnología</a></li>
-                            <li><a class="dropdown-item" href="html/categorias/deportes.html">Deportes y Fitness</a></li>
-                            <li><a class="dropdown-item" href="html/categorias/hogar.html">Hogar y Muebles</a></li>
-                            <li><a class="dropdown-item" href="html/categorias/electrodomesticos.html">Electrodomésticos</a></li>
-                            <li><a class="dropdown-item" href="html/categorias/herramientas.html">Herramientas</a></li>
-                            <li><a class="dropdown-item" href="html/categorias/juguetes.html">Juguetes</a></li>
-                            <li><a class="dropdown-item" href="html/categorias/vehiculos.html">Vehículos</a></li>
-                            <li><a class="dropdown-item" href="html/categorias/bebes.html">Bebés</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="html/ofertas.html">Ofertas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="html/historial.html">Historial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="html/moda.html">Moda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="html/vender.html">Vender</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="html/ayuda.html">Ayuda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="html/crearCuenta.html">Crea tu cuenta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="html/ingresa.html">Ingresa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="html/misCompras.html">Mis compras</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="html/carrito.html"><img src="img/carritoIcon.png" alt=""></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> --> 
-
     <main>
         <h2>Iniciar Sesión con Google</h2>
         <div id="google-signin-button" class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -97,6 +35,9 @@
                 var userToken = googleUser.getAuthResponse().id_token;
                 // Aquí puedes enviar el userToken al servidor para autenticar al usuario
                 console.log('ID Token: ' + userToken);
+                
+                // Redirigir al usuario después del inicio de sesión
+                window.location.href = "html/ofertas.html"; 
             }
         </script>
     </main>
