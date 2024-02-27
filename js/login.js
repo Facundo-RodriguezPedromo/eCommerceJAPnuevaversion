@@ -47,7 +47,22 @@ function showTab(tabName) {
 }
 
 
+/**Login con google */
+function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    var userToken = googleUser.getAuthResponse().id_token;
 
+    // Enviar el token al servidor para autenticar al usuario
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/login');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function() {
+        console.log('Respuesta del servidor:', xhr.responseText);
+        // Redirigir a la página de inicio después de iniciar sesión
+        window.location.href = '/home';
+    };
+    xhr.send('idtoken=' + userToken);
+}
 
 
 

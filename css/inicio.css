@@ -28,7 +28,7 @@ body main .modal-container {
   max-height: 88vh;
   color: rgba(230, 237, 243, 0.8705882353);
   background-color: #072C50;
-  box-shadow: 2px 2px 4px 2px rgb(184, 135, 70);
+  box-shadow: 1px 1px 3px 1px rgba(230, 237, 243, 0.8705882353);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,6 +157,7 @@ h1 {
   color: rgba(230, 237, 243, 0.8705882353);
   font-size: 48px;
   filter: drop-shadow(5px 2px 1px rgba(239, 243, 8, 0.295));
+  text-align: center;
 }
 
 h2 {

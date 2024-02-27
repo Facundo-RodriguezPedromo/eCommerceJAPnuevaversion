@@ -8,6 +8,10 @@
     <title>eMercado - Todo lo que busques está aquí</title>
     <meta name="author" content="Facundo Rodríguez Perdomo" />
     <meta name="description" content="ecommerce" />
+    <!--Login con google-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--<meta name="google-signin-client_id" content="">-->
+    <script src="config.js"></script>
     <!--Link principal Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -21,10 +25,10 @@
 </head>
 
 <body>
-    <div class="search-bar-container">
+    <!--<div class="search-bar-container">
         <input type="text" placeholder="Buscar producto" class="form-control">
     </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -81,41 +85,21 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> --> 
 
     <main>
-        <div class="container mt-5">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/car1.jpg" class="d-block w-100" alt="Imagen 1">
-                        <div class="carousel-caption">
-                            <h3>Encontra Tu auto</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/car2.jpg" class="d-block w-100" alt="Imagen 2">
-                        <div class="carousel-caption">
-                            <h3>Texto de la imagen 2</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/car3.jpg" class="d-block w-100" alt="Imagen 3">
-                        <div class="carousel-caption">
-                            <h3>Texto de la imagen 3</h3>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-        </div>
+        <h2>Iniciar Sesión con Google</h2>
+        <div id="google-signin-button" class="g-signin2" data-onsuccess="onSignIn"></div>
+    
+        <script>
+            function onSignIn(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                var userToken = googleUser.getAuthResponse().id_token;
+                // Aquí puedes enviar el userToken al servidor para autenticar al usuario
+                console.log('ID Token: ' + userToken);
+            }
+        </script>
+        
     </main>
     
     
@@ -126,6 +110,8 @@
                 <a href="#">Volver arriba</a>
             </p>
             <p>Este sitio forma parte de Desarrollo Web - JAP - 2021</p>
+            <p>Este sitio forma parte de FullStack - CoderHouse - 2024</p>
+            <p>Desarrollador Facundo Rodríguez</p>
         </div>
     </footer>
 
@@ -137,6 +123,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!--Link login--> 
+    <script src="js/login.js"></script>
 </body>
 
 </html>

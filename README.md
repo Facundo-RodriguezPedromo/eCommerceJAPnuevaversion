@@ -1,34 +1,48 @@
-Entrega 1 - Pautas Individuales
-Modelar las entidades y sus propiedades, detectadas a partir de la lectura del obligatorio. Para el modelado, puedes hacer uso de herramientas cómo draw.io, o cualquier otra herramienta que prefieras, incluso puedes hacerlo en una hoja de cálculos.
-Realizar una petición web a una URL donde se encuentra una colección de productos en formato JSON, con la información básica (precio, nombre, breve descripción) respectiva a cada producto, y mostrar el listado en HTML.
-Realizar una pantalla de autenticación, de forma tal que la misma sea el inicio del sitio (en vez de la portada donde se muestra el listado de categorías). Aquí podrás encontrar algún ejemplo.
+Entrega 1 - Pautas Individuales:
+Modelar las entidades y sus propiedades, detectadas a partir de la lectura del obligatorio. 
+Para el modelado puedes hacer uso de herramientas cómo draw.io, o cualquier otra herramienta que prefieras, incluso puedes hacerlo en una hoja de cálculos. ///***Pendiente***///
 
-Pautas grupales
-Agregar las validaciones correspondientes de usuario y contraseña (campos no vacíos) y redireccionar al sitio de portada cuando presione el botón de Ingresar.
-Nota: la autenticación será ficticia, es decir que los datos ingresados por el usuario se tomarán siempre cómo válidos, el único criterio de validación de datos será que haya ingresado valores en ambos campos.
+Realizar una petición web a una URL donde se encuentra una colección de 
+productos en formato JSON, con la información básica (precio, nombre, breve descripción) 
+respectiva a cada producto, y mostrar el listado en HTML. ///***Hecho***///
 
-Desafiate
+Realizar una pantalla de autenticación, de forma tal que la misma sea el inicio del sitio. 
+Pautas grupales:
+Agregar las validaciones correspondientes de usuario y contraseña (campos no vacíos) 
+y redireccionar al sitio de portada cuando presione el botón de Ingresar.
+Nota: la autenticación será ficticia, es decir que los datos ingresados por el usuario se 
+tomarán siempre cómo válidos, el único criterio de validación de datos será que haya ingresado 
+valores en ambos campos. ///***Pendiente***///
+
+Desafíate:
 Quieres realizar una autenticación real con Google?, para eso visita los siguientes links:
 
 OAuth
-Autenticación Google
+Autenticación Google ///***Pendiente***///
 
 --------------------------------------------------------------
 --------------------------------------------------------------
 
-Entrega 2 - Pautas Individuales
+Entrega 2 - Pautas Individuales:
 Con el listado de productos desplegados:
 
 Aplicar filtros a partir de rango de precio definido.
-Agregar las funcionalidades de orden ascendente y descendente en función del precio y descendente en función de la relevancia.
-Pautas grupales
-En la barra de navegación superior, agregar en la esquina superior derecha el nombre del usuario ingresado en la pantalla de inicio de sesión.
-Nota: investiga aquí cómo almacenar el usuario autenticado para utilizarlo en la barra de navegación, Recuerda que el usuario deberás almacenarlo en la pantalla de autenticación previo a redirigir al listado de productos. Para redirigir, te puede ser de ayuda este link.
+Agregar las funcionalidades de orden ascendente y descendente en función del precio y descendente 
+en función de la relevancia. ///***Pendiente***///
+
+Pautas grupales:
+En la barra de navegación superior, agregar en la esquina superior derecha el nombre del usuario 
+ingresado en la pantalla de inicio de sesión.
+Nota: investiga aquí cómo almacenar el usuario autenticado para utilizarlo en la barra de navegación, 
+Recuerda que el usuario deberás almacenarlo en la pantalla de autenticación previo a redirigir al 
+listado de productos. ///***Pendiente***///
 
 Desafiate
-Además de realizar las funcionalidades de ascendente y descendente, ¿no estaría bueno también tener un buscador?
-
-Incorpora un campo de texto buscador <input type="search" />, donde filtre en tiempo real (reflejar el resultado en cada tecla presionada) según el texto que se ingresa en dicho campo. Incluir en la búsqueda el text en título y/o descripción de los artículos. Estos links te pueden ayudar:
+Además de realizar las funcionalidades de ascendente y descendente, 
+¿no estaría bueno también tener un buscador? 
+Incorpora un campo de texto buscador <input type="search" />,donde filtre en tiempo real 
+(reflejar el resultado en cada tecla presionada) según el texto que se ingresa en dicho campo. 
+Incluir en la búsqueda el text en título y/o descripción de los artículos. ///***Hecho***/en ofertas.html//
 
 Eventos de tecleo.
 Obtener texto de un campo de texto (o buscador).
@@ -37,52 +51,82 @@ Obtener texto de un campo de texto (o buscador).
 ---------------------------------------------------------------------
 
 Entrega 3 - Pautas Individuales
-Realizar una petición web a una URL con un identificador del producto donde se encuentra toda la información detallada del mismo. Toda la información se deberá desplegar en HTML.
-Realizar una petición web a una URL donde ya se encuentran los comentarios y puntuación precargados del producto del punto anterior. Mostrar en HTML la información. ¿Quieres aplicar la puntuación en formato de estrellas?, entra aquí.
-Pautas grupales
-Agregar los controles gràficos necesarios para poder realizar un nuevo comentario y puntuación. El envío de datos será ficticio, es decir que no se implementará el envío de los mismos.
-Desafiate
-Si bien el comentario ingresado no será enviado a ningún servidor, cuando se simule el envío del mismo, intenta agregarlo cómo un comentario más de los mostrados referente al producto.
+Realizar una petición web a una URL con un identificador del producto donde se encuentra 
+toda la información detallada del mismo. Toda la información se deberá desplegar en HTML.
+
+Realizar una petición web a una URL donde ya se encuentran los comentarios y puntuación precargados 
+del producto del punto anterior. Mostrar en HTML la información. Aaplicar la puntuación en formato de estrellas. 
+///***Pendiente***///
+
+Pautas grupales:
+Agregar los controles gràficos necesarios para poder realizar un nuevo comentario y puntuación. 
+El envío de datos será ficticio, es decir que no se implementará el envío de los mismos.
+///***Pendiente***///
+
+Desafiate:
+Si bien el comentario ingresado no será enviado a ningún servidor, cuando se simule el envío del mismo, 
+intenta agregarlo cómo un comentario más de los mostrados referente al producto.
+///***Pendiente***///
 
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 
 Entrega 4 - Pautas individuales
-Realizar una petición web a una URL donde se encuentra un carrito ya con un producto precargado. Mostrar en HTML la información respecto al mismo, y los elementos gráficos que involucran al carrito (cantidad de productos, subtotal, envío, etc).
-Pautas grupales
-Dado el carrito de compras artículo ya cargado en el punto anterior, reflejar el costo total de la compra de ese artículo en tiempo real si se modifica la cantidad. Recuerda que el subtotal se calcula como el precio unitario del producto multiplicado por la cantidad.
-Desafiate
-En el carrito de las pautas anteriores se encuentra únicamente un producto, prueba a ver que tal te va con un carrito con 2 artículos precargados. Ten en cuenta que cada uno se encuentra en distinta moneda (para esto cotiza el dólar a $40 pesos).
+Realizar una petición web a una URL donde se encuentra un carrito ya con un producto precargado. 
+Mostrar en HTML la información respecto al mismo, y los elementos gráficos que involucran al carrito 
+(cantidad de productos, subtotal, envío, etc).
+///***Pendiente***///
+
+Pautas grupales:
+Dado el carrito de compras artículo ya cargado en el punto anterior, reflejar el costo total de la 
+compra de ese artículo en tiempo real si se modifica la cantidad. 
+Recuerda que el subtotal se calcula como el precio unitario del producto multiplicado por la cantidad.
+///***Pendiente***///
+
+Desafiate:
+En el carrito de las pautas anteriores se encuentra únicamente un producto, prueba a ver que 
+tal te va con un carrito con 2 artículos precargados. Ten en cuenta que cada uno se encuentra 
+en distinta moneda (para esto cotiza el dólar a $40 pesos).
+///***Pendiente***///
 
 El link de este carrito es: https://japdevdep.github.io/ecommerce-api/cart/654.json.
 
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 
-Entrega 5 - Pautas individuales
-Es hora de crear nuestro perfil. Recuerda que en la pauta grupal de Entrega 4 elaboramos un menú donde una de las opciones es Mi perfil. Ahora implementaremos esta pantalla. La misma consiste en mostrar nuestros datos personales:
+Entrega 5 - Pautas individuales:
+Es hora de crear nuestro perfil. Recuerda que en la pauta grupal de Entrega 4 elaboramos un 
+menú donde una de las opciones es Mi perfil. Ahora implementaremos esta pantalla. La misma consiste 
+en mostrar nuestros datos personales:
 Nombres y apellidos
 Edad
 E-mail
 Teléfono de contacto
-Deberá de haber un botón de forma tal que almacene los cambios guardados con respecto a cualquiera de los datos personales, que deberàn ser modificables. Para almacenar nuestro perfil, volveremos a hacer uso de guardar en sesión, cómo se hizo en la pauta grupal de la Entrega 2. Recuerda del uso de los métodos JSON.stringify y JSON.parse para poder almacenar y recuperar los datos almacenados respectivamente.
+
+Deberá de haber un botón de forma tal que almacene los cambios guardados con respecto a 
+cualquiera de los datos personales, que deberàn ser modificables. Para almacenar nuestro perfil, 
+volveremos a hacer uso de guardar en sesión, cómo se hizo en la pauta grupal de la Entrega 2. 
+Recuerda del uso de los métodos JSON.stringify y JSON.parse para poder almacenar y recuperar los 
+datos almacenados respectivamente.
 
 Ten en cuenta que para efectivamente guardar los datos, se deberá probar a partir de la siguiente forma:
-
 Modificar los datos personales.
 Presionar el botón de guardar datos.
 Cerrar la pestaña del navegador.
-Volver a abrir la pestaña del navegador e ir a mi perfil.
+Volver a abrir la pestaña del navegador e ir a mi perfil.  ///***⛏️PRUEBA⛏️***////
+
+
 Se deberá mostrar allí los datos guardados.
 La primera vez (donde previamente no se guardaron los datos), los campos se deberán mostrar vacíos.
-Pautas grupales
-Es hora de tener presente el concepto de grilla y Responsive Design. Para esto, en vez de mostrar la lista de productos en forma de filas, se deberán mostrar en forma de cuadrícula. Para esto, investigar el concepto de sistema de grilla que se encuentra en este link.
 
-Allí se explica qué clases de Bootstrap se deben aplicar para poder distribuir los elementos HTML. Recordar que los elementos mencionados se construyen a partir del código JavaScript, por lo tanto es posible que se deba modificar archivos .html y/o .js.
+Pautas grupales:
+Es hora de tener presente el concepto de grilla y Responsive Design. Para esto, en vez de mostrar la lista de productos en forma de filas, se deberán mostrar en forma de cuadrícula. Para esto, investigar el concepto de sistema de grilla.
+
+Clases de Bootstrap se deben aplicar para poder distribuir los elementos HTML. Recordar que los elementos mencionados se construyen a partir del código JavaScript, por lo tanto es posible que se deba modificar archivos .html y/o .js.
 
 Aquí puedes ver un ejemplo del sistema de grillas aplicado. Consejo: redimensiona la ventana del navegador para observar los distintos comportamientos de la distribución de los elementos cuando las dimensiones se asemejan a las de un dispositivo móvil.
 
-Desafiate
+Desafiate:
 En la página de nuestro perfil, ¿sabías que incluso puedes almacenar una imagen en sesión?. Para esto, primero deberás obtener una imagen con un link público de forma tal que la primera vez se guarde esa imagen en sesión.
 
 Para obtener el link público:
@@ -97,12 +141,14 @@ Visita este link para saber cómo guardar la imagen en sesión y mostrarla.
 
 Entrega 6 - En esta entrega retomaremos al carrito de compras para terminar de implementar las funcionalidades del mismo:
 
-Pautas individuales
+Pautas individuales:
 A partir de seleccionar un botón de forma de pago, mostrar una ventana con la opción de seleccionar el mismo, y sus campos respectivos. Puedes investigar aquí cómo mostrar ventanas.
 A partir de la selección del método de envío, calcular el envío en base al subtotal y el porcentaje respectivo al envío seleccionado. Reflejar ese costo en el desglose de costos del carrito ya hecho en la entrega anterior, en tiempo real al momento de seleccionar entre los distintos envíos posibles.
-Pautas grupales
+
+Pautas grupales:
 Validar que todos los campos se encuentran seleccionados y/o con valor para poder realizar la compra. El único control de validación será que los campos se encuentran completados: método de envío, cantidad, etc.
-Desafiate
+
+Desafiate:
 Cuando pensamos que terminamos de implementar el carrito, nos damos cuenta que no hay opción de eliminar cualquiera de los artículos. Piensa e implementa la mejor forma de ofrecer al usuario la manera de quitar cualquier artículo del listado, y reflejar los costos.
 
 ---------------------------------------------------------------------------------------------------------------
@@ -259,6 +305,7 @@ Copy code
   });
 </script>
 Asegúrate de reemplazar 'TU_CLIENT_ID' con el ID de cliente que obtuviste al configurar las credenciales en la consola de Google Cloud.
+Crear variable de entorno, no subir el ID_Client en el html publico en github.
 
 Pruebas:
 
@@ -267,7 +314,8 @@ Estos pasos proporcionan una guía general. La implementación exacta puede vari
 
 ----------------------------------------------------------------------------
 ----------------------------------------------------------------------------
-Comandos sass
+
+///***Comandos sass***///
 
 npm init 
 (nos brinda nuestros datos, si estan ok, damos "y" )
@@ -286,4 +334,3 @@ STOP
 
 
 IDEAS ////////// 
-Puede ser un ecommerce para que las personas publiques sus ropas usadas, dejar direccion para retirar o coordinar con comprador

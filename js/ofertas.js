@@ -41,7 +41,7 @@
         comprar.addEventListener("click", () => {
             
             // Establece un color de fondo por 100 mili, avisa en cada click de compra
-            document.body.style.background = 'blue';
+            document.body.style.background = "#bec4cade";
             setTimeout(() => document.body.style.background = '', 100);
 
             //con cada producto separado luego armo el objeto dentro del carrito

@@ -28,7 +28,7 @@ body {
             max-height: 88vh;
             color: $blancoZulado;
             background-color: $azulScuro;
-            box-shadow: 2px 2px 4px 2px $dorado;
+            box-shadow: 1px 1px 3px 1px $blancoZulado;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -167,6 +167,7 @@ h1 {
     color: $blancoZulado;
     font-size: 48px;
     filter: drop-shadow(5px 2px 1px $doradoClaro);
+    text-align: center;
 }
 
 h2 {
