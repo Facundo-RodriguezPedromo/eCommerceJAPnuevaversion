@@ -1,0 +1,3 @@
+Para esta entrega me propongo crear un login con alguna libreria que de alertas si 
+no cumple con ciertos requisitos para ingresar o registrarse, utilizando local storage
+

@@ -130,25 +130,51 @@ body footer .container p {
   display: none;
 }
 
-/* Galeria de index */
-.container .mt-5 {
-  margin-top: 0;
-}
-
-.carousel-item img {
+/* Login de index */
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  width: 100vh;
-  margin: 0 auto; /* Centrar la imagen dentro de su contenedor */
-  margin-top: 0;
+  background-color: rgba(7, 44, 80, 0.3294117647);
 }
 
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff; /* Color del texto */
+.login-container, .register-container {
+  background-color: rgba(230, 237, 243, 0.8705882353);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(184, 135, 70);
+  width: 300px;
+  margin: 0 10px;
+}
+
+.login-container h2, .register-container h2 {
+  margin-top: 0;
+  color: #072C50;
+  border-top-style: double;
+  border-color: rgb(184, 135, 70);
+}
+
+input[type=email], input[type=password],
+input[type=text], button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(239, 243, 8, 0.295);
+  border-radius: 4px;
+}
+
+button {
+  background-color: rgb(184, 135, 70);
+  color: #072C50;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #072C50;
+  color: rgba(230, 237, 243, 0.8705882353);
 }
 
 /*main*/
@@ -164,6 +190,9 @@ h2 {
   color: rgba(230, 237, 243, 0.8705882353);
   font-size: 28px;
   filter: drop-shadow(2px 2px 1px #072C50);
+  border-top-style: double;
+  border-color: rgb(184, 135, 70);
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=inicio.css.map */

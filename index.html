@@ -8,10 +8,6 @@
     <title>eMercado - Todo lo que busques está aquí</title>
     <meta name="author" content="Facundo Rodríguez Perdomo" />
     <meta name="description" content="ecommerce" />
-    <!--Login con google-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="291141038251-5v7sl8ms8argqpi0435mqutsfo3d0n0r.apps.googleusercontent.com">
-    <!--<script src="js/config.js"></script>-->
     <!--Link principal Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -21,28 +17,45 @@
     <!--Fuente de letra general de la página (kdam)-->
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
     <!--para que se respeten mis estilos mi CSS va debajo de link bootstrap-->
+<!--Sweetalert2 alerta en login-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
     <link rel="stylesheet" href="css/inicio.css" />
 </head>
 
 <body>
     <main>
-        <h2>Iniciar Sesión con Google</h2>
-        <div id="google-signin-button" class="g-signin2" data-onsuccess="onSignIn"></div>
-    
-        <script>
-            function onSignIn(googleUser) {
-                var profile = googleUser.getBasicProfile();
-                var userToken = googleUser.getAuthResponse().id_token;
-                // Aquí puedes enviar el userToken al servidor para autenticar al usuario
-                console.log('ID Token: ' + userToken);
-                
-                // Redirigir al usuario después del inicio de sesión
-                window.location.href = "html/ofertas.html"; 
-            }
-        </script>
+        <h2 style="text-align: center; margin-top: 10px;">eCommerce - CoderFacuHouse</h2>
+
+        <div class="container-login">
+            <div class="login-container">
+                <h2>Iniciar sesión</h2>
+                <form id="login-form">
+                    <input type="text" placeholder="Nombre de usuario" id="user" >
+                    <input type="email" placeholder="Correo electrónico" id="email" >
+                    <input type="password" placeholder="Contraseña" id="password" >
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+            </div>
+
+            <div class="register-container">
+                <h2>Registro</h2>
+                <form id="register-form">
+                    <input type="text" placeholder="Nombre completo" id="fullname" >
+                    <input type="email" placeholder="Correo electrónico" id="register-email" >
+                    <input type="password" placeholder="Contraseña" id="register-password" >
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+
+        </div>
+
+
     </main>
-    
-    
+
+
+
+
 
     <footer class="text-muted">
         <div class="container">
@@ -63,8 +76,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <!--Link login--> 
+    <!--Link login-->
     <script src="js/login.js"></script>
+    <!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

@@ -1,71 +1,50 @@
-//* Validacion De Usuario *//
-document.addEventListener("DOMContentLoaded", function () {
+/*Validacion para loguearse*/
+document.getElementById('login-form').addEventListener('submit', 
 
-    document.getElementById("Entrar").addEventListener("click", function (evento) {
-        evento.preventDefault();
+function (event) {
+    event.preventDefault();
+    
+    let user = document.getElementById('user').value
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
 
-        let usuario = document.getElementById('login-email').value;
-        let clave = document.getElementById('login-password').value;
-
-        if (usuario.length == 0 || clave.length == 0) {
-            swal('Los datos Correo Electronico y Contraseña son obligatorios', '', 'error');
-        }
-        if (usuario.length >= 1 && clave.length >= 1) {
-            localStorage.setItem("login-email", usuario)
-            window.location.href = "./html/inicio.html";
-        }
-    });
-
-//* Validacion De Registro e-commerce *//
-    document.getElementById("Registrarse").addEventListener("click", function (evento) {
-        evento.preventDefault();
-
-        let register = document.getElementById('register-email').value;
-        let registerPassword = document.getElementById('register-password').value;
-
-        if (register.length == 0 || registerPassword == 0) {
-            swal('Debe completar los datos', '', 'error')
-        }
-        if (register.length >= 1 && registerPassword.length >= 1) {
-            localStorage.setItem("register-email", register)
-            window.location.href = "./html/inicio.html";
-        }
-    });
-
-
+    if (email.trim() === '' || password.trim() === '' || user.trim() === '') {
+        //libreria sweet2 para alerta
+        Swal.fire({
+            title: 'Debes completar todos los campos para ingresar',
+            icon: 'warning',
+            confirmButtonText: 'intenta denuevo'
+        })
+        return;
+    } else {
+        // Guardo el nombre del usuario en el Local Storage
+        localStorage.setItem('username', user);
+        window.location.href = '../html/ofertas.html';
+    }
 });
 
-/** Login registro efectos para las cajas **/
-function showTab(tabName) {
-    document.getElementById('login-form').style.display = (tabName === 'login') ? 'block' : 'none';
-    document.getElementById('register-form').style.display = (tabName === 'register') ? 'block' : 'none';
+/*Validacion para registrarse*/
+document.getElementById('register-form').addEventListener('submit', 
 
-    document.getElementById('login-tab').classList.remove('active');
-    document.getElementById('register-tab').classList.remove('active');
+function (event) {
+    event.preventDefault();
+    
+    var fullname = document.getElementById('fullname').value;
+    var email = document.getElementById('register-email').value;
+    var password = document.getElementById('register-password').value;
 
-    document.getElementById(tabName + '-tab').classList.add('active');
-}
-
-
-/**Login con google */
-function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    var userToken = googleUser.getAuthResponse().id_token;
-
-    // Enviar el token al servidor para autenticar al usuario
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/login');
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onload = function() {
-        console.log('Respuesta del servidor:', xhr.responseText);
-        // Redirigir a la página de inicio después de iniciar sesión
-        window.location.href = '/home';
-    };
-    xhr.send('idtoken=' + userToken);
-}
-
-
-
+    if (fullname.trim() === '' || email.trim() === '' || password.trim() === '') {
+        Swal.fire({
+            title: 'Debes completar todos los campos para registrarte',
+            icon: 'warning',
+            confirmButtonText: 'intenta denuevo'
+        })
+        return;
+    } else {
+        localStorage.setItem('username', fullname);
+        window.location.href = '../html/ofertas.html';
+    }
+});
 
 
 
