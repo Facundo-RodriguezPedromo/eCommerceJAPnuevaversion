@@ -19,7 +19,7 @@ function (event) {
     } else {
         // Guardo el nombre del usuario en el Local Storage
         localStorage.setItem('username', user);
-        window.location.href = '../html/ofertas.html';
+        window.location.href = './html/ofertas.html';
     }
 });
 
@@ -42,7 +42,7 @@ function (event) {
         return;
     } else {
         localStorage.setItem('username', fullname);
-        window.location.href = '../html/ofertas.html';
+        window.location.href = './html/ofertas.html';
     }
 });
 
