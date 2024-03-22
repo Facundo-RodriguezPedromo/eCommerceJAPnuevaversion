@@ -160,18 +160,9 @@ const pintarCarrito = () => {
         cantidadCarrito.style.display = "block";
         cantidadCarrito.innerText = carrito.length;
     };
-    
-
-    // ver si hay algo en el carrito al recargar la pagina o iniciarla
-window.addEventListener('DOMContentLoaded', () => {
-    const carritoGuardado = localStorage.getItem('carrito');
-        if (carritoGuardado) {
-            carrito = JSON.parse(carritoGuardado);
-            carritoCounter();
-    }
-});
-
-// Guardo el carrito actual en LS
+    // Guardo el carrito actual en LS
 const guardarCarritoEnLocalStorage = () => {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 };
+
+
