@@ -67,6 +67,7 @@
             }
             //console.log(carrito)
             carritoCounter();
+            guardarCarritoEnLocalStorage();
         });
         
     }//for del click
@@ -117,7 +118,7 @@ const pintarCarrito = () => {
                 </div>
             </div>
             `;
-    
+            
             modalContainer.append(carritoContent);
             
         let eliminar = document.createElement("span");
@@ -139,6 +140,7 @@ const pintarCarrito = () => {
         total a pagar: $${total}
         `;
         modalContainer.append(totalBuying);
+        
     };
     
     ////////////////////////////////////////////////////////////////////////
@@ -150,6 +152,7 @@ const pintarCarrito = () => {
         carrito.splice(index, 1);
         carritoCounter();
         pintarCarrito();
+        guardarCarritoEnLocalStorage();
     }
     
     // Funcion para contar la cantidad de objetos dentro del carrito, dibuja globito en span de carrito
@@ -159,4 +162,16 @@ const pintarCarrito = () => {
     };
     
 
+    // ver si hay algo en el carrito al recargar la pagina o iniciarla
+window.addEventListener('DOMContentLoaded', () => {
+    const carritoGuardado = localStorage.getItem('carrito');
+        if (carritoGuardado) {
+            carrito = JSON.parse(carritoGuardado);
+            carritoCounter();
+    }
+});
 
+// Guardo el carrito actual en LS
+const guardarCarritoEnLocalStorage = () => {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+};

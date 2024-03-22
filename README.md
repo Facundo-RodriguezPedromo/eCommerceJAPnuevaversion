@@ -1,6 +1,7 @@
 Entrega 1 - Pautas Individuales:
 Modelar las entidades y sus propiedades, detectadas a partir de la lectura del obligatorio. 
-Para el modelado puedes hacer uso de herramientas cómo draw.io, o cualquier otra herramienta que prefieras, incluso puedes hacerlo en una hoja de cálculos. ///***Pendiente***///
+Para el modelado puedes hacer uso de herramientas cómo draw.io, o cualquier otra herramienta que prefieras, 
+incluso puedes hacerlo en una hoja de cálculos. ///***Pendiente***///
 
 Realizar una petición web a una URL donde se encuentra una colección de 
 productos en formato JSON, con la información básica (precio, nombre, breve descripción) 
@@ -12,7 +13,7 @@ Agregar las validaciones correspondientes de usuario y contraseña (campos no va
 y redireccionar al sitio de portada cuando presione el botón de Ingresar.
 Nota: la autenticación será ficticia, es decir que los datos ingresados por el usuario se 
 tomarán siempre cómo válidos, el único criterio de validación de datos será que haya ingresado 
-valores en ambos campos. ///***Pendiente***///
+valores en ambos campos. ///***Hecho***///
 
 Desafíate:
 Quieres realizar una autenticación real con Google?, para eso visita los siguientes links:
@@ -35,14 +36,14 @@ En la barra de navegación superior, agregar en la esquina superior derecha el n
 ingresado en la pantalla de inicio de sesión.
 Nota: investiga aquí cómo almacenar el usuario autenticado para utilizarlo en la barra de navegación, 
 Recuerda que el usuario deberás almacenarlo en la pantalla de autenticación previo a redirigir al 
-listado de productos. ///***Pendiente***///
+listado de productos. ///***Hecho***///
 
 Desafiate
 Además de realizar las funcionalidades de ascendente y descendente, 
 ¿no estaría bueno también tener un buscador? 
 Incorpora un campo de texto buscador <input type="search" />,donde filtre en tiempo real 
 (reflejar el resultado en cada tecla presionada) según el texto que se ingresa en dicho campo. 
-Incluir en la búsqueda el text en título y/o descripción de los artículos. ///***Hecho***/en ofertas.html//
+Incluir en la búsqueda el text en título y/o descripción de los artículos. ///***Hecho***///
 
 Eventos de tecleo.
 Obtener texto de un campo de texto (o buscador).
@@ -163,6 +164,7 @@ Notas:
 
 No olvides consultar el material que se encuentra dentro de esta carpeta de entrega, donde encontrarás información sobre cómo instalar y hacer uso de NodeJS y ExpressJS.
 Recuerda modificar las URLs del sitio (archivo init.js), accediendo ahora a tu servidor local, y verificar que todo funcione!
+
 No subir las URLs modificadas al repositorio de código, ya que no funcionarán una vez publicado el sitio. Esto sucede debido a que las URLs “apuntaràn” a un servidor local (tu computadora) donde no es accesible desde internet.
 La entrega consistirá en entregar el archivo app.js junto con los archivos json involucrados.
 Pautas grupales
